@@ -1,14 +1,7 @@
-# DZProbe v2.0.1
+# DZProbe v1.0
 <img width="1130" height="587" alt="截屏2026-03-29 19 47 16" src="https://github.com/user-attachments/assets/ecd5f4aa-62af-4723-a288-49554695e591" />
 
 轻量、可扩展、面向批量资产的 TCP/UDP 存活探测与服务指纹识别工具。
-
-v2 重点改进：
-- 修复终端表格字段宽度过窄导致的信息截断问题。
-- 加宽「目标」列，避免长域名显示为 `energymeteo-pseo.sdu...`。
-- 加宽「Server」列，避免 `nginx/1.24.0 (U...` 这类版本信息被过早省略。
-- 将列宽提取为可维护常量，后续可按需统一调节。
-- 新增回归测试，锁定长域名与长 Server Banner 的输出行为，防止后续回退。
 
 
 ## 功能概览
