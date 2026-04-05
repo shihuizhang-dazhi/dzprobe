@@ -1,0 +1,17 @@
+[project]
+name = "dzprobe"
+version = "2.0.1"
+description = "TCP/UDP liveness probing and service fingerprinting CLI"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "dazhi" }]
+dependencies = [
+	"colorama>=0.4.6",
+]
+
+[project.scripts]
+DZProbe = "alive_probe.cli:main"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

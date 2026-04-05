@@ -1,0 +1,330 @@
+[
+  {
+    "protocol": "http",
+    "pattern": "^HTTP/"
+  },
+  {
+    "protocol": "rtsp",
+    "pattern": "^RTSP/"
+  },
+  {
+    "protocol": "sip",
+    "pattern": "^(SIP/2\\.0|INVITE\\s+sip:|REGISTER\\s+sip:)"
+  },
+  {
+    "protocol": "nginx",
+    "pattern": "server:\\s*nginx"
+  },
+  {
+    "protocol": "caddy",
+    "pattern": "server:\\s*caddy"
+  },
+  {
+    "protocol": "envoy",
+    "pattern": "server:\\s*envoy"
+  },
+  {
+    "protocol": "traefik",
+    "pattern": "server:\\s*traefik"
+  },
+  {
+    "protocol": "openresty",
+    "pattern": "server:\\s*openresty"
+  },
+  {
+    "protocol": "tengine",
+    "pattern": "server:\\s*tengine"
+  },
+  {
+    "protocol": "haproxy",
+    "pattern": "(server:\\s*haproxy|via:\\s*haproxy)"
+  },
+  {
+    "protocol": "varnish",
+    "pattern": "(server:\\s*varnish|x-varnish:)"
+  },
+  {
+    "protocol": "squid",
+    "pattern": "(server:\\s*squid|x-squid-error)"
+  },
+  {
+    "protocol": "lighttpd",
+    "pattern": "server:\\s*lighttpd"
+  },
+  {
+    "protocol": "apache",
+    "pattern": "server:\\s*apache"
+  },
+  {
+    "protocol": "iis",
+    "pattern": "server:\\s*microsoft-iis"
+  },
+  {
+    "protocol": "tomcat",
+    "pattern": "(server:\\s*apache-coyote|x-powered-by:\\s*servlet)"
+  },
+  {
+    "protocol": "jetty",
+    "pattern": "server:\\s*jetty"
+  },
+  {
+    "protocol": "resin",
+    "pattern": "server:\\s*resin"
+  },
+  {
+    "protocol": "websphere",
+    "pattern": "(websphere|server:\\s*ibm_http_server)"
+  },
+  {
+    "protocol": "gunicorn",
+    "pattern": "server:\\s*gunicorn"
+  },
+  {
+    "protocol": "uvicorn",
+    "pattern": "server:\\s*uvicorn"
+  },
+  {
+    "protocol": "weblogic",
+    "pattern": "(weblogic|bea-)"
+  },
+  {
+    "protocol": "kong",
+    "pattern": "(server:\\s*kong|x-kong-)"
+  },
+  {
+    "protocol": "apisix",
+    "pattern": "(apisix|x-apisix-)"
+  },
+  {
+    "protocol": "jenkins",
+    "pattern": "(x-jenkins|x-jenkins-session|jenkins)"
+  },
+  {
+    "protocol": "grafana",
+    "pattern": "(grafana|x-grafana-)"
+  },
+  {
+    "protocol": "sonarqube",
+    "pattern": "(sonarqube|x-sonarqube-version)"
+  },
+  {
+    "protocol": "nexus",
+    "pattern": "(nexus repository manager|sonatype nexus)"
+  },
+  {
+    "protocol": "kibana",
+    "pattern": "(kibana|kbn-name|kbn-version)"
+  },
+  {
+    "protocol": "prometheus",
+    "pattern": "(prometheus|x-prometheus-scrape-timeout-seconds)"
+  },
+  {
+    "protocol": "minio",
+    "pattern": "(minio|x-amz-request-id)"
+  },
+  {
+    "protocol": "activemq",
+    "pattern": "(activemq|apache-activemq)"
+  },
+  {
+    "protocol": "rabbitmq",
+    "pattern": "(rabbitmq|management plugin)"
+  },
+  {
+    "protocol": "artemis",
+    "pattern": "(activemq artemis|apache artemis)"
+  },
+  {
+    "protocol": "docker-registry",
+    "pattern": "docker-distribution-api-version"
+  },
+  {
+    "protocol": "docker-api",
+    "pattern": "(docker api|api-version:.*docker)"
+  },
+  {
+    "protocol": "kubernetes",
+    "pattern": "(kubernetes|kube-apiserver|x-kubernetes-pf-)"
+  },
+  {
+    "protocol": "harbor",
+    "pattern": "(harbor|x-harbor-)"
+  },
+  {
+    "protocol": "vault",
+    "pattern": "(vault|x-vault-)"
+  },
+  {
+    "protocol": "nacos",
+    "pattern": "(nacos|x-nacos-)"
+  },
+  {
+    "protocol": "apollo",
+    "pattern": "(apollo config service|apollo-adminservice|x-apollo-)"
+  },
+  {
+    "protocol": "cloudflare",
+    "pattern": "(server:\\s*cloudflare|cf-ray|cf-cache-status)"
+  },
+  {
+    "protocol": "openai-gateway",
+    "pattern": "(openai|x-request-id)"
+  },
+  {
+    "protocol": "ssh",
+    "pattern": "^SSH-"
+  },
+  {
+    "protocol": "telnet",
+    "pattern": "(telnet|\\xff\\xfb|\\xff\\xfd)"
+  },
+  {
+    "protocol": "smtp",
+    "pattern": "^(220[\\-\\s].*(ESMTP|SMTP)|5\\d\\d\\s+SMTP)"
+  },
+  {
+    "protocol": "ftp",
+    "pattern": "^(220[\\-\\s].*FTP|530\\s|331\\s)"
+  },
+  {
+    "protocol": "pop3",
+    "pattern": "^\\+OK"
+  },
+  {
+    "protocol": "imap",
+    "pattern": "^\\* OK"
+  },
+  {
+    "protocol": "smtp",
+    "pattern": "(postfix|exim|sendmail)"
+  },
+  {
+    "protocol": "ftp",
+    "pattern": "(vsftpd|proftpd|pure-ftpd)"
+  },
+  {
+    "protocol": "mysql",
+    "pattern": "(mysql|mariadb|mysql_native_password|caching_sha2_password)"
+  },
+  {
+    "protocol": "mssql",
+    "pattern": "(microsoft sql server|sql server|tds protocol)"
+  },
+  {
+    "protocol": "oracle",
+    "pattern": "(oracle|tns-|ora-[0-9]{5})"
+  },
+  {
+    "protocol": "postgres",
+    "pattern": "(postgresql|postgres|invalid length of startup packet)"
+  },
+  {
+    "protocol": "redis",
+    "pattern": "^(\\+PONG|\\-NOAUTH|\\-ERR)"
+  },
+  {
+    "protocol": "mongodb",
+    "pattern": "(mongodb|isMaster|not master and slaveOk=false)"
+  },
+  {
+    "protocol": "cassandra",
+    "pattern": "(cassandra|native protocol|invalid or unsupported protocol version)"
+  },
+  {
+    "protocol": "neo4j",
+    "pattern": "(neo4j|x-neo4j-version|neo4j-browser)"
+  },
+  {
+    "protocol": "couchdb",
+    "pattern": "(couchdb|x-couch-request-id|x-couchdb-body-time)"
+  },
+  {
+    "protocol": "memcached",
+    "pattern": "^(VERSION\\s+|STAT\\s+)"
+  },
+  {
+    "protocol": "mqtt",
+    "pattern": "mqtt"
+  },
+  {
+    "protocol": "amqp",
+    "pattern": "amqp"
+  },
+  {
+    "protocol": "dns",
+    "pattern": "(bind\\s*[0-9]|dnsmasq|server failure)"
+  },
+  {
+    "protocol": "snmp",
+    "pattern": "(snmp|1\\.3\\.6\\.1\\.2\\.1)"
+  },
+  {
+    "protocol": "ldap",
+    "pattern": "(ldap|invalid dn syntax|namingcontexts)"
+  },
+  {
+    "protocol": "smb",
+    "pattern": "(\\xffsmb|\\xfesmb|samba)"
+  },
+  {
+    "protocol": "vnc",
+    "pattern": "rfb\\s*00[0-9]\\.[0-9]{3}"
+  },
+  {
+    "protocol": "kafka",
+    "pattern": "(kafka|unsupported version|api_versions)"
+  },
+  {
+    "protocol": "elasticsearch",
+    "pattern": "(elasticsearch|x-elastic-product)"
+  },
+  {
+    "protocol": "opensearch",
+    "pattern": "(opensearch|x-opensearch-product-version)"
+  },
+  {
+    "protocol": "solr",
+    "pattern": "(solr|x-solr)"
+  },
+  {
+    "protocol": "zookeeper",
+    "pattern": "(zookeeper|imok|zk_version)"
+  },
+  {
+    "protocol": "consul",
+    "pattern": "(consul|x-consul-index|x-consul-knownleader)"
+  },
+  {
+    "protocol": "etcd",
+    "pattern": "(etcd|x-etcd-cluster-id|x-etcd-index)"
+  },
+  {
+    "protocol": "grpc",
+    "pattern": "(content-type:\\s*application/grpc|grpc-status|grpc-message)"
+  },
+  {
+    "protocol": "hdfs",
+    "pattern": "(hdfs|namenode|dfshealth)"
+  },
+  {
+    "protocol": "spark",
+    "pattern": "(spark ui|apache spark|x-spark)"
+  },
+  {
+    "protocol": "gitlab",
+    "pattern": "(gitlab|x-gitlab-meta)"
+  },
+  {
+    "protocol": "gitea",
+    "pattern": "(gitea|x-gitea-version)"
+  },
+  {
+    "protocol": "rdp",
+    "pattern": "Cookie: mstshash"
+  },
+  {
+    "protocol": "rdp",
+    "pattern": "mstshash"
+  }
+]
