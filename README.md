@@ -56,12 +56,13 @@ chmod +x DZProce.py
 ### 3. 全端口快速摸底
 
 ```bash
-./DZProce.py -f targets.txt -p - -t 400 --tcp-timeout 0.25 --tcp-retries 1
+./DZProce.py -f targets.txt -p- -t 400 --tcp-timeout 0.25 --tcp-retries 1
 ```
 
 ### 4. 开启完整指纹识别
 
 ```bash
+
 ./DZProce.py -f targets.txt --finger
 ```
 
