@@ -1,4 +1,4 @@
-# DZProbe v1.0
+# DZProbe v2.0
 <img width="1130" height="587" alt="截屏2026-03-29 19 47 16" src="https://github.com/user-attachments/assets/ecd5f4aa-62af-4723-a288-49554695e591" />
 
 轻量、可扩展、面向批量资产的 TCP/UDP 存活探测与服务指纹识别工具。
